@@ -1,1 +1,1 @@
-# estudo_html
+# Exercícios feitos em aula para desenvolvimento web.
