@@ -1,0 +1,67 @@
+body {
+    background-color: #ff96ca;
+    font-family: arial;
+}
+
+.container {
+    text-align: center;
+}
+
+.cachorro {
+    border-radius: 50%;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border: solid 10px #ca2c69;
+    
+}
+
+.cachorro:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+h1 {
+    font-size: 25px;
+    color: #d34a7f;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.mussum-group{
+    display: flex;
+    flex-direction: row;
+}
+
+.mussum-box {
+    text-align: justify;
+    background-color: #d34a7f;
+    padding: 10px;
+    border-radius: 20px;
+    height: 200px;
+    width: 400px;
+    margin: auto;
+}
+
+.mussum {
+    color: #ffff;
+    font-size: 18px;
+}
+
+button {
+    background-color: #d34a7f;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-color: #ca2c69;
+    outline: none;
+    padding: 10px;
+    margin: 3% 45.7%;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}

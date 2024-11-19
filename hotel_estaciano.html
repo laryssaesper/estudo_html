@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Hotel Estaciano</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="Reserva Hotel"/>
+
+        <!-- implementação com css -->
+        <link href="css_form.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>Reserva para Hotel Estaciano</h1>
+        <a href="https://estacio.br/" target="_blank"><h3>Voltar para Estácio</h3></a>
+        <a name="topo"><h1>Projeto</h1></a>   
+
+        <!-- imagem -->
+        <figure>
+            <figcaption>Rio de Janeiro</figcaption>
+            <img src="rj.jfif" alt="Foto do Rio de Janeiro"/>
+        </figure>
+
+        <!-- formulário -->
+        <!-- formulário usando javascript -->
+         <form action="#" method="post" oninput="total.value=(noites.valueAsNumber*250)+((hospede.valueAsNumber)*50)">
+        
+            <fieldset>
+                <legend>Dados da Reserva</legend>
+                <div class="campo">
+                    <label>Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome..." style="width: 20em;" required/>
+                    <br/>
+                </div><br/>
+
+                <!-- seleção de sexo -->
+                <div class="campo">
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="masculino"/>Masculino
+                    </label>
+                    <label class="checkbox">
+                        <input type="radio" name="sexo" value="feminino"/>Feminino
+                    </label><br/>
+                </div>
+
+                <div class="campo">
+                    <label>E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required/>
+                </div><br/>
+                <!-- verificação de e-mail -->
+                <div class="campo">
+                    <label>Repite seu E-mail</label>
+                    <input type="email" id="email_repet" name="email_repet" placeholder="Digite novamente seu e-mail" oninput="check(this)" required/>
+                </div><br/>
+
+                <div class="campo">
+                    <label>Data de Chegada</label>
+                    <input type="date" id="date" name="date" required/>
+                </div><br/>
+                
+                <div class="campo">
+                    <label>Número de noites (R$250,00 adicional por noite): </label>
+                    <input type="number" id="noite" name="noite" value="1" min="1" max="30" required/>
+                </div><br/>
+
+                <div class="campo">
+                    <label>Número de hóspedes (R$50,00 adicional por noite): </label>
+                    <input type="number" id="hospede" name="hospede" value="1" min="1" max="4" required/>
+                </div><br/>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label>Total Estimado: </label>
+                        R$<output id="total" name="total">250</output>.00
+                    </div>
+                </fieldset><br/>
+
+                <div class="campo">
+                    <label>Mensagem</label>
+                    <textarea name="message" style="width: 40em;" placeholder="Algum comentário extra?"></textarea>
+                </div><br/>
+                
+                <div class="campo">
+                    <label>Código Promocional</label>
+                    <input type="text" id="promo" name="promo" maxlength="6" pattern="[A-Za-z0-9]{6}"/>
+                </div><br/>
+
+                <div class="campo">
+                    <label>Newsletter</label><br/>
+                        <label class="checkbox">
+                            <input type="checkbox" id="newsletter" name="newsletter" value="1"/>
+                            Gostaria de receber nossa Newsletter?
+                        </label>                
+                </div>
+                <br/>
+                <button class="botao submit" type="submit" name="submit">Requerer Reserva</button>              
+            </fieldset>
+        </form>
+        <a href="#topo"><p>Voltar para o topo</p></a>
+    </body>
+</html>

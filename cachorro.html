@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>SD</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="cachorro.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container" id="cachorro">
+        <img class="cachorro" id="cachorro" src="cachorro_triste.jfif" alt="cachorro triste" />
+    </div>
+
+    <h1 class="primeiro" id="primeiro">Cachorro triste, pois acordou às 05:30 da manhã para suas obrigações</h1>
+
+    <div class="mussum-group">
+        <div class="mussum-box">
+            <p class="mussum" id="mussum">Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se
+                pirulitá.
+                Interagi no mé, cursus quis, vehicula ac nisi. Copo furadis é disculpa de bebadis, arcu quam euismod
+                magna.
+                Suco de cevadiss deixa as pessoas mais interessantis.
+            </p>
+        </div>
+
+        <div class="mussum-box">
+            <p class="mussum" id="mussum">Detraxit consequat et quo num tendi nada. Posuere libero varius. Nullam a nisl
+                ut ante blandit hendrerit. Aenean sit amet nisi. Mé faiz elementum girarzis, nisi eros vermeio. Interagi
+                no mé, cursus quis, vehicula ac nisi.
+            </p>
+        </div>
+
+        <div class="mussum-box">
+            <p class="mussum" id="mussum">Quem num gosta di mé, boa gentis num é. Em pé sem cair, deitado sem dormir,
+                sentado sem cochilar e fazendo pose. Mé faiz elementum girarzis, nisi eros vermeio. Detraxit consequat
+                et quo num tendi nada.
+            </p>
+        </div>
+    </div>
+
+    <button onclick="alert('clicou');">CLIQUE AQUI!</button>
+
+    <script>
+        // código javascript
+        // RETORNA ALGUM ELEMENTO PELO SEU ID
+        document.getElementById('mussum')
+
+        // abre uma janela
+        // window.alert('alerta');
+
+        //abre janela para digitação
+        // window.prompt();
+
+        //muda a cor de fundo da página
+        document.bgColor = 'yellow';
+
+        // escrever algo
+        document.write('<h1>Texto</h1>');
+
+        // ao clicar no parágrafo, pode mudar seu texto
+        var pega = document.querySelector('h1');
+        pega.addEventListener('click', atualizar);
+        function atualizar() {
+            var texto = prompt('insira um texto');
+            pega.textContent = texto;
+        }
+    </script>
+</body>
+
+</html>
